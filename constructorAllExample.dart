@@ -11,12 +11,12 @@ var p = Person();
 
 
 
-class Human3{
+class Human3{                                               //vvi
   String? name;
     int ? age;
     double? cgp;
     String? email;
-//defalut value is name="hasan3"age=20 cgp=3 this all not working,, object clss initial is final
+            //defalut value is name="hasan3"age=20 cgp=3 this all not working,, object clss initial is final
     Human3({String this.name="hasan3",int this.age=20, double this.cgp=3, required this.email}){
       print("this process3 type of constructor");
       print("it's called default constructor;");
