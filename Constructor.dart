@@ -12,6 +12,153 @@ Key Points:
 *Constructor is used to initialize the values of the properties of the class
 
 
+
+Example 3: Constructor In Dart
+In this example below, there is a class Car with two properties: name and price. 
+The class has one constructor for initializing the values of the properties. The 
+class also contains method display(), which is used to display the values of the 
+properties. We also created an object of the class Car called car.
+
+ class Car {
+  String? name;
+  double? price;
+
+  // Constructor
+  Car(String name, double price) {
+    this.name = name;
+    this.price = price;
+  }
+
+  // Method
+  void display() {
+    print("Name: ${this.name}");
+    print("Price: ${this.price}");
+  }
+}
+
+void main() {
+  // Here car is object of class Car.
+  Car car = Car("BMW", 500000.0);
+  car.display();
+}
+
+
+
+
+Example 5: Write Constructor Single Line:
+In the avobe section, you have written the constructor in long form. You can 
+also write the constructor in short form. You can directly assign the values 
+to the properties. For example, the following code is the short form of the 
+constructor in one line.
+
+class Person{
+  String? name;
+  int? age;
+  String? subject;
+  double? salary;
+
+  // Constructor in short form
+  Person(this.name, this.age, this.subject, this.salary);
+
+  // display method
+  void display(){
+    print("Name: ${this.name}");
+    print("Age: ${this.age}");
+    print("Subject: ${this.subject}");
+    print("Salary: ${this.salary}");
+  }
+}
+
+void main(){
+  Person person = Person("John", 30, "Maths", 50000.0);
+  person.display();
+}
+
+
+Example 6: Constructor With Optional Parameters:
+In the example below, we have created a class Employee with four properties: name, 
+age, subject, and salary. Class has  one   constructor    for initializing the all 
+properties values. For subject and salary, we have used optional parameters. It 
+means we can pass or not pass the values of subject and salary. The Class also 
+contain method display() which is used to display the values of the properties. 
+We also created an object of the class Employee called employee.
+
+class Employee {
+  String? name;
+  int? age;
+  String? subject;
+  double? salary;
+
+  // Constructor
+  Employee(this.name, this.age, [this.subject = "N/A", this.salary=0]);
+
+  // Method
+  void display() {
+    print("Name: ${this.name}");
+    print("Age: ${this.age}");
+    print("Subject: ${this.subject}");
+    print("Salary: ${this.salary}");
+  }
+}
+
+void main(){
+  Employee employee = Employee("John", 30);
+  employee.display();
+}
+
+
+
+Example 7: Constructor With Named Parameters:
+In the example below, we have created a class Chair with two properties: name and color. 
+Class has one constructor for initializing the all properties values with named parameters. 
+The Class also contain method display() which is used to display the values of the properties. 
+We also created an object of the class Chair called chair.
+
+class Chair {
+String? name;
+String? color;
+
+// Constructor
+Chair({this.name, this.color});
+
+// Method
+void display() {
+  print("Name: ${this.name}");
+  print("Color: ${this.color}");
+}
+}
+
+void main(){
+Chair chair = Chair(name: "Chair1", color: "Red");
+chair.display();
+}
+
+
+Example 8: Constructor With Default Values
+In the example below, we have created a class Table with two properties: name and color. 
+Class has one constructor for initializing the all properties values with default values. 
+The Class also contain method display() which is used to display the values of the properties. 
+We also created an object of the class Table called table.
+
+class Table {
+  String? name;
+  String? color;
+
+  // Constructor
+  Table({this.name = "Table1", this.color = "White"});
+
+  // Method
+  void display() {
+    print("Name: ${this.name}");
+    print("Color: ${this.color}");
+  }
+}
+
+void main(){
+  Table table = Table();
+  table.display();
+}
+
 */
 
 
