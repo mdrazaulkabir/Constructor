@@ -29,7 +29,7 @@ class Human3{                                               //vvi
         print(email);
     }
 }
-Human3 human3=Human3(age:23,email: "razaulkabir@gamil.com");//default constructor     //vvi
+Human3 human3=Human3(age:23,email: "razaulkabir@gamil.com");          //default constructor     //vvi
 
 
 
@@ -105,7 +105,7 @@ We also created an object of the class Table called table.
 //   }
 // }
 // void main(){
-//   Table table=Table(name: "whiteTabe", color: "white");//always priority this initial value
+//   Table table=Table(name: "whiteTabe", color: "white");        //always priority this initial value
 //   table.display();
   
 // }
