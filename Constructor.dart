@@ -4,6 +4,11 @@ It is called automatically when an object is created, and it can
   be used to set the initial values for the object’s properties.
 
 
+main Two type of constructor:       // next file(contructorAllEcample.dart) in details 
+1.Parameterise constructor. (must be need parameter pass in object)
+2.Defalut costrucor. (its will be work automaticaly when you create one object)
+
+
 Key Points:
 *The constructor’s name should be the same as the class name.
 *Constructor doesn’t have any return type.
