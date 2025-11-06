@@ -33,7 +33,7 @@ Human3 human3=Human3(age:23,email: "razaulkabir@gamil.com");          //default 
 
 
 
-2. Parameterized Constructor
+2. Parameterized Constructor / Constructor Single Line:
 This constructor takes parameters to initialize the object.
 class Person {
   String name;

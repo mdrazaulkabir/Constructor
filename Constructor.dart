@@ -207,31 +207,31 @@ main(){
 
 
 
+
+
+
+                      // :::below some process that how to implement the constructor:::
 //process0                                      //vvi
-class Human{
+// class Human{
+//   //constuctor can initial any value here (also like parameter where created object process2)   
+//     String? name="hasan0";
+//     int ? age=23;
+//     double? cgp=3.9;
 
-  //constuctor can initial any value here (also like parameter where created object process2)   
-    String? name="hasan0";
-    int ? age=23;
-    double? cgp=3.9;
-
-    Human(){
-        print(" this is process0 the constructor when you will be create one object then automatically will be called :");
-        print(name);
-        print(age);
-        print(cgp);
-    }
-    //you can print seperately in like display funtion ,,aslo you can print in constructor       //vvi
-    void display(){
-        print(" this is process0 the constructor when you will be create one object then automatically will be called :");
-        print(name);
-        print(age);
-        print(cgp);
-    }
-}
-
-
-
+//     Human(){
+//         print(" this is process0 the constructor when you will be create one object then automatically will be called :");
+//         print(name);
+//         print(age);
+//         print(cgp);
+//     }
+//     //you can print seperately in like display funtion ,,aslo you can print in constructor       //vvi
+//     void display(){
+//         print(" this is process0 the constructor when you will be create one object then automatically will be called :");
+//         print(name);
+//         print(age);
+//         print(cgp);
+//     }
+// }
 
 
 
@@ -311,3 +311,88 @@ class Human5{
   }
 
 }
+
+
+
+/*
+1. Default Constructor
+A default constructor is the constructor that doesn’t take any parameters.
+
+class Person {
+  Person() {
+    print("Default constructor called");
+  }
+}
+var p = Person();
+
+
+
+class Human3{                                               //vvi
+  String? name;
+    int ? age;
+    double? cgp;
+    String? email;
+            //defalut value is name="hasan3"age=20 cgp=3 this all not working,, object clss initial is final
+    Human3({String this.name="hasan3",int this.age=20, double this.cgp=3, required this.email}){
+      print("this process3 type of constructor");
+      print("it's called default constructor;");
+        print(name);
+        print(this.name);
+        print(age);
+        print(this.age);
+        print(cgp);
+        print(this.cgp);
+        print(email);
+    }
+}
+Human3 human3=Human3(age:23,email: "razaulkabir@gamil.com");          //default constructor     //vvi
+
+
+
+2. Parameterized Constructor / Constructor Single Line:
+This constructor takes parameters to initialize the object.
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age); //can also use this
+  //Person({required this.name, required this.age});
+
+}
+
+var p = Person("Kabir", 23);
+
+3. Named Constructor
+Dart allows multiple constructors using named constructors. Useful 
+for multiple ways to initialize an object.
+
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+
+  Person.youngPerson(this.name) {
+    age = 18;
+  }
+}
+
+var p1 = Person("Kabir", 25);
+var p2 = Person.youngPerson("Kabir");
+
+
+4. Constant Constructor
+Used when you want the object to be immutable (can’t change 
+after creation) and at compile-time.
+
+class Point {
+  final int x;
+  final int y;
+
+  const Point(this.x, this.y);
+}
+
+const p = Point(10, 20);
+
+
+*/
