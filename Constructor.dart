@@ -8,6 +8,9 @@ main Two type of constructor:       // next file(contructorAllEcample.dart) in d
 1.Parameterise constructor. (must be need parameter pass in object)
 2.Defalut costrucor. (its will be work automaticaly when you create one object)
 
+another one it's factory consturctor: it's in contructorAllExample file=>     //vvi
+
+
 
 Key Points:
 *The constructor’s name should be the same as the class name.
